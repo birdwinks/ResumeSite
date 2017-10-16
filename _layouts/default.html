@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- meta tage for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tag for site title -->
+    <title>{{page:title}}</title>
+    <!-- CSS normalize - to be same across all browsers -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Gridlex - adding grids -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.1/gridlex.min.css">
+    <!-- Fonts from Google -->
+    <link href="https://fonts.googleapis.com/css?family=Ledger|Nixie+One" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Link to pull icons -->
+    <script src="https://use.fontawesome.com/1199651437.js"></script>
+  </head>
+
+  <body>
+
+<!-- HEADER -->
+    <header id="home">
+      <nav class="grid-spaceBetween">
+        <div class="col-2">
+          <img src="images/logo.png" alt="my logo">
+        </div>
+        <div class="col-5 navLinks">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div class="grid-center intro">
+        <h1 class="col-7">Christina Winkler</h1>
+        <h2 class="col-7">Front-End Developer</h2>
+        <h3 class="col-7">You vision, I code</h3>
+      </div>
+    </header>
+
+
+{{content}}
+
+
+
+<!-- FOOTER -->
+    <footer id="contact" class="myContact">
+      <h2>Contact Me</h2>
+      <form class="grid-center" method="POST" action="http://formspree.io/hello@christinawinkler.com">
+        <label class="col-7" for="name">NAME</label>
+        <input class="col-7" type="text" name="name">
+        <label class="col-7" for="email">E-MAIL</label>
+        <input class="col-7" type="email" name="email">
+        <label class="col-7" for="message">MESSAGE</label>
+        <textarea class="col-7" name="message"></textarea>
+        <button class="col-7" type="submit">Send</button>
+      </form>
+      <nav class="grid-center">
+        <a class="col-1 socialMedia" href="https://facebook.com" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <a class="col-1 socialMedia" href="https://instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a class="col-1 socialMedia" href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    </footer>
+  </body>
+</html>
